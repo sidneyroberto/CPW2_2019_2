@@ -72,4 +72,18 @@ body {
   border: none;
 }
 
+#listagemContatos {
+  margin-top: 20px;
+}
+#listagemContatos table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 95%;
+  font-family: "padrao";
+}
+#listagemContatos table thead {
+  background-color: #1ba39c;
+  color: white;
+}
+
 /*# sourceMappingURL=estilos.css.map */
