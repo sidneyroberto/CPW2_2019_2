@@ -4,10 +4,34 @@
  */
 var contatos = [
     {
-        nome: 'Sidney',
-        telefone: '888888888',
+        nome: 'Sidney Roberto Bragança Álvares Cabral',
+        telefone: '(67) 92873-7374',
         email: 'sidney@email.com',
         dataNascimento: '29/02/2003'
+    },
+    {
+        nome: 'Lucas Negri',
+        telefone: '(67) 92929-2929',
+        email: 'lucas@email.com',
+        dataNascimento: '12/01/1971'
+    },
+    {
+        nome: 'Leandro Oliveira',
+        telefone: '(67) 93373-2929',
+        email: 'leandro@email.com',
+        dataNascimento: '03/11/1982'
+    },
+    {
+        nome: 'Daiane Sampaio',
+        telefone: '(67) 92822-9832',
+        email: 'daiane@email.com',
+        dataNascimento: '23/10/2008'
+    },
+    {
+        nome: 'Marcia Cristaldo',
+        telefone: '(67) 98367-1010',
+        email: 'marcia@email.com',
+        dataNascimento: '03/10/1969'
     }
 ];
 renderizarTabelaContatos();
