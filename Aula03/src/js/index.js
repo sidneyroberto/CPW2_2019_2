@@ -35,6 +35,7 @@ var contatos = [
     }
 ];
 renderizarTabelaContatos();
+renderizarCardsContatos();
 
 function salvarContato(event) {
     // Inibe a recarga da página
@@ -63,12 +64,15 @@ function salvarContato(event) {
 
     // Invoca a renderização da tabela
     renderizarTabelaContatos();
+
+    // Invoca a renderização dos cards
+    renderizarCardsContatos();
 }
 
 function renderizarTabelaContatos() {
     if (contatos.length > 0) {
         let areaListagemContatos =
-            document.getElementById('listagemContatos');
+            document.getElementById('tabelaContatos');
 
         /**
          * Limpa a área de listagem
@@ -154,4 +158,38 @@ function criarCorpoTabela() {
     }
 
     return corpoTabela;
+}
+
+function renderizarCardsContatos() {
+    if (contatos.length > 0) {
+        let areaListagemContatos =
+            document.getElementById('cardsContatos');
+
+        /**
+         * Ao invés de usar um loop,
+         * utilizaremos a função forEach
+         */
+        contatos.forEach(function (contato) {
+            let card = document.createElement('div');
+            let inicialNome = document.createElement('span');
+            inicialNome.innerText = contato.nome.charAt(0);
+            let nome = document.createElement('span');
+            let tamanhoNome = contato.nome.length;
+            nome.innerText = contato.nome.substr(1, tamanhoNome);
+            let telefone = document.createElement('span');
+            telefone.innerText = contato.telefone;
+            let email = document.createElement('span');
+            email.innerText = contato.email;
+            let dataNasc = document.createElement('span');
+            dataNasc.innerText = contato.dataNascimento;
+
+            card.appendChild(inicialNome);
+            card.appendChild(nome);
+            card.appendChild(telefone);
+            card.appendChild(email);
+            card.appendChild(dataNasc);
+            areaListagemContatos.appendChild(card);
+        });
+
+    }
 }

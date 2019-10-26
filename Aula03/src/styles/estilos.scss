@@ -70,11 +70,12 @@ body {
             background-color: $cor-botao-primario;
             color: white;
             border: none;
+            text-shadow: 1px 1px 1px #555555;
         }
     }
 }
 
-#listagemContatos {
+#tabelaContatos {
     margin-top: 20px;
 
     table {
@@ -103,6 +104,10 @@ body {
 
             td {
                 font-size: 90%;
+            }
+
+            th {
+                text-shadow: 1px 1px 1px #555555;
             }
 
             th,

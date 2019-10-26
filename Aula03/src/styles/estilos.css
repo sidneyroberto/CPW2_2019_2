@@ -9,7 +9,7 @@
 }
 @font-face {
   font-family: "padrao";
-  src: url(../fonts/Raleway-Regular.ttf);
+  src: url(../fonts/Lato-Regular.ttf);
 }
 body {
   margin: 0;
@@ -70,32 +70,36 @@ body {
   background-color: #019875;
   color: white;
   border: none;
+  text-shadow: 1px 1px 1px #555555;
 }
 
-#listagemContatos {
+#tabelaContatos {
   margin-top: 20px;
 }
-#listagemContatos table {
+#tabelaContatos table {
   border-collapse: collapse;
   margin: 0px auto 50px auto;
   width: 95%;
   font-family: "padrao";
 }
-#listagemContatos table thead {
+#tabelaContatos table thead {
   background-color: #1ba39c;
   color: white;
 }
-#listagemContatos table tr:hover td {
+#tabelaContatos table tr:hover td {
   background-color: #eeeeee;
 }
-#listagemContatos table tr:nth-child(even) {
+#tabelaContatos table tr:nth-child(even) {
   background-color: #d7f2ec;
 }
-#listagemContatos table tr td {
+#tabelaContatos table tr td {
   font-size: 90%;
 }
-#listagemContatos table tr th,
-#listagemContatos table tr td {
+#tabelaContatos table tr th {
+  text-shadow: 1px 1px 1px #555555;
+}
+#tabelaContatos table tr th,
+#tabelaContatos table tr td {
   text-align: center;
   padding: 5px 0px;
   /*
@@ -107,13 +111,13 @@ body {
       última coluna
    */
 }
-#listagemContatos table tr th:first-child,
-#listagemContatos table tr td:first-child {
+#tabelaContatos table tr th:first-child,
+#tabelaContatos table tr td:first-child {
   text-align: left;
   padding-left: 5px;
 }
-#listagemContatos table tr th:last-child,
-#listagemContatos table tr td:last-child {
+#tabelaContatos table tr th:last-child,
+#tabelaContatos table tr td:last-child {
   text-align: right;
   padding-right: 5px;
 }
