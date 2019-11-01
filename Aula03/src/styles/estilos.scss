@@ -140,3 +140,61 @@ body {
         }
     }
 }
+
+// Estilização dos cards
+
+#cardsContatos {
+
+    display: none;
+    padding: 5px 0px;
+
+    // Cada div representa um card
+    div {
+        border: 1px solid $cor-borda;
+        box-shadow: 2px 2px $cor-borda;
+        margin: 0px auto 10px auto;
+        width: 90%;
+        border-radius: 5px;
+        padding: 10px 7px 7px 7px;
+
+        span {
+            font-family: $fonte-padrao;
+            font-size: 80%;
+            display: block;
+            text-indent: 42px;
+
+            /*
+                Deixando a inicial e o
+                restante do nome na mesma
+                linha.
+            */
+            &:first-child,
+            &:nth-child(2) {
+                text-indent: 0px;
+                display: inline-block;
+                font-size: 100%;
+                margin-bottom: -5px;
+            }
+
+            // Inicial do nome
+            &:first-child {
+                background-color: $cor-botao-primario;
+                color: white;
+                padding: 10px 15px;
+                border-radius: 50%;
+                margin-right: 3px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #cardsContatos {
+        display: block;
+    }
+
+    #tabelaContatos {
+        display: none;
+    }
+}

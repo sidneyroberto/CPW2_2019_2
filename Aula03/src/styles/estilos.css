@@ -122,4 +122,51 @@ body {
   padding-right: 5px;
 }
 
+#cardsContatos {
+  display: none;
+  padding: 5px 0px;
+}
+#cardsContatos div {
+  border: 1px solid #1ba39c;
+  box-shadow: 2px 2px #1ba39c;
+  margin: 0px auto 10px auto;
+  width: 90%;
+  border-radius: 5px;
+  padding: 10px 7px 7px 7px;
+}
+#cardsContatos div span {
+  font-family: "padrao";
+  font-size: 80%;
+  display: block;
+  text-indent: 42px;
+  /*
+      Deixando a inicial e o
+      restante do nome na mesma
+      linha.
+  */
+}
+#cardsContatos div span:first-child, #cardsContatos div span:nth-child(2) {
+  text-indent: 0px;
+  display: inline-block;
+  font-size: 100%;
+  margin-bottom: -5px;
+}
+#cardsContatos div span:first-child {
+  background-color: #019875;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-right: 3px;
+}
+
+@media only screen and (max-width: 600px) {
+  #cardsContatos {
+    display: block;
+  }
+
+  #tabelaContatos {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=estilos.css.map */

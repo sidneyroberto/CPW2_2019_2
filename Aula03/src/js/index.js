@@ -4,7 +4,7 @@
  */
 var contatos = [
     {
-        nome: 'Sidney Roberto Bragança Álvares Cabral',
+        nome: 'Sidney Roberto Bragança Álvares',
         telefone: '(67) 92873-7374',
         email: 'sidney@email.com',
         dataNascimento: '29/02/2003'
