@@ -147,6 +147,7 @@ body {
 
     display: none;
     padding: 5px 0px;
+    margin-top: 20px;
 
     // Cada div representa um card
     div {
@@ -196,5 +197,14 @@ body {
 
     #tabelaContatos {
         display: none;
+    }
+
+    #formularioContato {
+
+        width: 88%;
+
+        input[type=text] {
+            width: 250px;
+        }
     }
 }

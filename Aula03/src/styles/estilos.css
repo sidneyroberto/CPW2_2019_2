@@ -125,6 +125,7 @@ body {
 #cardsContatos {
   display: none;
   padding: 5px 0px;
+  margin-top: 20px;
 }
 #cardsContatos div {
   border: 1px solid #1ba39c;
@@ -166,6 +167,13 @@ body {
 
   #tabelaContatos {
     display: none;
+  }
+
+  #formularioContato {
+    width: 88%;
+  }
+  #formularioContato input[type=text] {
+    width: 250px;
   }
 }
 
