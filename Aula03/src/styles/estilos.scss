@@ -189,6 +189,30 @@ body {
     }
 }
 
+
+/*
+    Campo de filtro
+*/
+
+#filtro {
+    margin: 30px auto 0px auto;
+    display: block;
+    border-radius: 20px;
+    width: 50%;
+    height: 35px;
+    border: 1px solid #cccccc;
+    outline: none;
+    text-indent: 20px;
+    //text-align: center;
+    font-size: 90%;
+
+    &:hover {
+        border: none;
+        box-shadow: 1px 1px 5px #dddddd,
+            -1px -1px 3px #dddddd;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     #cardsContatos {
@@ -206,5 +230,9 @@ body {
         input[type=text] {
             width: 250px;
         }
+    }
+
+    #filtro {
+        width: 85%;
     }
 }
