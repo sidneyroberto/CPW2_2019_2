@@ -2,38 +2,38 @@
  * Nosso BD fake!
  * (in memory DB)
  */
+
+/**
+ * Cria o objeto sidney
+ */
+let sidney = new Contato(
+    'Sidney Roberto', '(67) 92873-7374',
+    'sidney@email.com', '29/02/2003');
+let lucas = new Contato(
+    'Lucas Negri', '(67) 92929-2929',
+    'lucas@email.com', '12/01/1971'
+);
+let leandro = new Contato(
+    'Leandro Oliveira', '(67) 93373-2929',
+    'leandro@email.com', '03/11/1982'
+);
+let daiane = new Contato(
+    'Daiane Sampaio', '(67) 92822-9832',
+    'daiane@email.com', '23/10/2008'
+);
+let marcia = new Contato(
+    'Marcia Cristaldo', '(67) 98367-1010',
+    'marcia@email.com', '03/10/1969'
+);
 var contatos = [
-    {
-        nome: 'Sidney Roberto Bragança Álvares',
-        telefone: '(67) 92873-7374',
-        email: 'sidney@email.com',
-        dataNascimento: '29/02/2003'
-    },
-    {
-        nome: 'Lucas Negri',
-        telefone: '(67) 92929-2929',
-        email: 'lucas@email.com',
-        dataNascimento: '12/01/1971'
-    },
-    {
-        nome: 'Leandro Oliveira',
-        telefone: '(67) 93373-2929',
-        email: 'leandro@email.com',
-        dataNascimento: '03/11/1982'
-    },
-    {
-        nome: 'Daiane Sampaio',
-        telefone: '(67) 92822-9832',
-        email: 'daiane@email.com',
-        dataNascimento: '23/10/2008'
-    },
-    {
-        nome: 'Marcia Cristaldo',
-        telefone: '(67) 98367-1010',
-        email: 'marcia@email.com',
-        dataNascimento: '03/10/1969'
-    }
+    sidney,
+    lucas,
+    leandro,
+    daiane,
+    marcia
 ];
+
+
 renderizarTabelaContatos(contatos);
 renderizarCardsContatos(contatos);
 
