@@ -139,6 +139,11 @@ body {
             }
         }
     }
+
+    span {
+        margin-left: 30px;
+        font-family: $fonte-padrao;
+    }
 }
 
 // Estilização dos cards
@@ -186,6 +191,12 @@ body {
                 margin-right: 3px;
             }
         }
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        font-family: $fonte-padrao;
     }
 }
 

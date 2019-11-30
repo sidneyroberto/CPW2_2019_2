@@ -38,5 +38,4 @@ var contatos = [
  * ContatoView
  */
 var contatoView = new ContatoView(contatos);
-contatoView.renderizarTabelaContatos();
-contatoView.renderizarCardsContatos();
+
